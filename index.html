@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>合肥科瑞思通电子科技有限公司 | Hefei Keruistone Electronics</title>
-  <meta name="description" content="合肥科瑞思通电子科技有限公司 - 专业电子电路开发、硬件设计、单片机开发与硬件方案集成。">
+  <meta name="description" content="合肥科瑞思通电子科技有限公司 - 十年硬件开发经验，专业电子电路开发、硬件设计、单片机开发与整机方案集成。">
   <style>
     body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0e11;color:#e9eef5;line-height:1.6}
     header{background:#111;padding:15px 20px;position:sticky;top:0;z-index:10}
@@ -20,11 +20,15 @@
     .lang-switch{float:right}
     .btn{display:inline-block;padding:10px 16px;border-radius:6px;background:#3cc4ff;color:#04121a;font-weight:bold;text-decoration:none}
     img{border-radius:6px;margin-top:10px}
+    /* 语言切换颜色 */
+    .lang-zh{color:#3cc4ff;font-weight:bold}
+    .lang-en{color:#70e0a6;font-weight:bold}
   </style>
   <script>
     function switchLang(lang){
       document.querySelectorAll("[data-zh]").forEach(el=>{
         el.innerText = lang==="zh"?el.dataset.zh:el.dataset.en;
+        el.className = lang==="zh"?"lang-zh":"lang-en";
       });
     }
   </script>
@@ -32,7 +36,9 @@
 <body>
   <header>
     <div style="display:flex;justify-content:space-between;align-items:center">
-      <h1 data-zh="合肥科瑞思通电子科技有限公司" data-en="Hefei Keruistone Electronics">合肥科瑞思通电子科技有限公司</h1>
+      <h1 data-zh="合肥科瑞思通电子科技有限公司" data-en="Hefei Keruistone Electronics" class="lang-zh">
+        合肥科瑞思通电子科技有限公司
+      </h1>
       <div class="lang-switch">
         <a href="javascript:void(0)" onclick="switchLang('zh')">中文</a> | 
         <a href="javascript:void(0)" onclick="switchLang('en')">English</a>
@@ -47,19 +53,21 @@
   </header>
 
   <section id="hero">
-    <h2 data-zh="从原理图到量产，我们交付可靠的硬件方案" 
-        data-en="From schematics to mass production, we deliver reliable hardware solutions">
-      从原理图到量产，我们交付可靠的硬件方案
+    <h2 data-zh="十年硬件开发经验，快速交付可靠方案" 
+        data-en="10+ Years of Hardware Expertise, Delivering Reliable Solutions Fast"
+        class="lang-zh">
+      十年硬件开发经验，快速交付可靠方案
     </h2>
-    <p data-zh="我们专注于电子电路开发、硬件设计、单片机开发与整机方案集成，帮助客户快速实现产品落地。" 
-       data-en="We specialize in circuit development, hardware design, microcontroller programming, and system integration to help clients bring products to market quickly.">
-      我们专注于电子电路开发、硬件设计、单片机开发与整机方案集成，帮助客户快速实现产品落地。
+    <p data-zh="我们专注于电子电路开发、硬件设计、单片机开发与整机方案集成。团队由多位高级硬件工程师组成，拥有十年以上底层硬件开发经验。我们坚持工程师直接对接客户，快速理解需求，减少沟通成本，确保方案从原理图到量产都高效落地。" 
+       data-en="We specialize in circuit development, hardware design, microcontroller programming, and system integration. Our team of senior hardware engineers brings over a decade of low-level hardware development experience. We work engineer-to-engineer with clients, ensuring fast requirement understanding, reduced communication overhead, and efficient delivery from schematics to mass production."
+       class="lang-zh">
+      我们专注于电子电路开发、硬件设计、单片机开发与整机方案集成。团队由多位高级硬件工程师组成，拥有十年以上底层硬件开发经验。我们坚持工程师直接对接客户，快速理解需求，减少沟通成本，确保方案从原理图到量产都高效落地。
     </p>
     <a href="#contact" class="btn" data-zh="获取方案评估" data-en="Get a Quote">获取方案评估</a>
   </section>
 
   <section id="services">
-    <h2 data-zh="服务能力" data-en="Our Services">服务能力</h2>
+    <h2 data-zh="服务能力" data-en="Our Services" class="lang-zh">服务能力</h2>
     <div class="grid cols-3">
       <div class="card" data-zh="硬件设计：原理图、PCB、EMC整改" data-en="Hardware Design: Schematics, PCB, EMC">
         硬件设计：原理图、PCB、EMC整改
@@ -74,17 +82,15 @@
   </section>
 
   <section id="cases">
-    <h2 data-zh="成功案例" data-en="Case Studies">成功案例</h2>
+    <h2 data-zh="成功案例" data-en="Case Studies" class="lang-zh">成功案例</h2>
     <div class="grid cols-2">
       <div class="card">
         <h3>案例一：工业光电采集模块</h3>
-        <!-- 预留案例照片1 -->
         <img src="images/case1.jpg" alt="案例一照片" width="100%">
-        <p>500Hz 信号链优化，稳定度与带宽平衡，已经量产。</p>
+        <p>500Hz 信号链优化，稳定度与带宽平衡，量产 5k+。</p>
       </div>
       <div class="card">
         <h3>案例二：低功耗无线节点</h3>
-        <!-- 预留案例照片2 -->
         <img src="images/case2.jpg" alt="案例二照片" width="100%">
         <p>2 年续航设计，现场 EMI/ESD 加固。</p>
       </div>
@@ -92,7 +98,7 @@
   </section>
 
   <section id="process">
-    <h2 data-zh="服务流程" data-en="Process">服务流程</h2>
+    <h2 data-zh="服务流程" data-en="Process" class="lang-zh">服务流程</h2>
     <ol>
       <li data-zh="需求沟通与评估" data-en="Requirement Analysis">需求沟通与评估</li>
       <li data-zh="方案设计与报价" data-en="Design & Quotation">方案设计与报价</li>
@@ -102,12 +108,10 @@
   </section>
 
   <section id="contact">
-    <h2 data-zh="联系我们" data-en="Contact Us">联系我们</h2>
+    <h2 data-zh="联系我们" data-en="Contact Us" class="lang-zh">联系我们</h2>
     <p><strong>Email:</strong> 18256062995@163.com</p>
     <p><strong>微信:</strong> xaihb111</p>
-    <p><strong>电话:</strong> 18511977829</p>
     <p>扫码添加微信：</p>
-    <!-- 预留微信二维码 -->
     <img src="images/wechat.png" alt="微信二维码" width="200">
   </section>
 
