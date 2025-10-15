@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>合肥科瑞思通电子科技有限公司 | Hefei Keruistone Electronics</title>
+  <meta name="description" content="合肥科瑞思通电子科技有限公司 - 专业电子电路开发、硬件设计、单片机开发与硬件方案集成。">
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0e11;color:#e9eef5;line-height:1.6}
+    header{background:#111;padding:15px 20px;position:sticky;top:0;z-index:10}
+    header h1{margin:0;font-size:20px}
+    nav a{color:#e9eef5;margin:0 10px;text-decoration:none;font-weight:bold}
+    nav a:hover{color:#3cc4ff}
+    section{padding:50px 20px;max-width:1000px;margin:auto}
+    h2{color:#3cc4ff;margin-top:0}
+    .grid{display:grid;gap:20px}
+    @media(min-width:768px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:#12161c;padding:20px;border-radius:8px;border:1px solid #1b2330}
+    footer{background:#111;color:#9fb0c0;text-align:center;padding:20px}
+    .lang-switch{float:right}
+    .btn{display:inline-block;padding:10px 16px;border-radius:6px;background:#3cc4ff;color:#04121a;font-weight:bold;text-decoration:none}
+  </style>
+  <script>
+    function switchLang(lang){
+      document.querySelectorAll("[data-zh]").forEach(el=>{
+        el.innerText = lang==="zh"?el.dataset.zh:el.dataset.en;
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h1 data-zh="合肥科瑞思通电子科技有限公司" data-en="Hefei Keruistone Electronics">合肥科瑞思通电子科技有限公司</h1>
+      <div class="lang-switch">
+        <a href="javascript:void(0)" onclick="switchLang('zh')">中文</a> | 
+        <a href="javascript:void(0)" onclick="switchLang('en')">English</a>
+      </div>
+    </div>
+    <nav>
+      <a href="#services" data-zh="服务" data-en="Services">服务</a>
+      <a href="#cases" data-zh="案例" data-en="Cases">案例</a>
+      <a href="#process" data-zh="流程" data-en="Process">流程</a>
+      <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2 data-zh="从原理图到量产，我们交付可靠的硬件方案" 
+        data-en="From schematics to mass production, we deliver reliable hardware solutions">
+      从原理图到量产，我们交付可靠的硬件方案
+    </h2>
+    <p data-zh="我们专注于电子电路开发、硬件设计、单片机开发与整机方案集成，帮助客户快速实现产品落地。" 
+       data-en="We specialize in circuit development, hardware design, microcontroller programming, and system integration to help clients bring products to market quickly.">
+      我们专注于电子电路开发、硬件设计、单片机开发与整机方案集成，帮助客户快速实现产品落地。
+    </p>
+    <a href="#contact" class="btn" data-zh="获取方案评估" data-en="Get a Quote">获取方案评估</a>
+  </section>
+
+  <section id="services">
+    <h2 data-zh="服务能力" data-en="Our Services">服务能力</h2>
+    <div class="grid cols-3">
+      <div class="card" data-zh="硬件设计：原理图、PCB、EMC整改" data-en="Hardware Design: Schematics, PCB, EMC">
+        硬件设计：原理图、PCB、EMC整改
+      </div>
+      <div class="card" data-zh="单片机开发：STM32/ESP32 驱动与应用" data-en="MCU Development: STM32/ESP32 Drivers & Apps">
+        单片机开发：STM32/ESP32 驱动与应用
+      </div>
+      <div class="card" data-zh="模拟与传感：TIA/ADC接口、滤波与放大" data-en="Analog & Sensors: TIA/ADC, Filtering, Amplification">
+        模拟与传感：TIA/ADC接口、滤波与放大
+      </div>
+    </div>
+  </section>
+
+  <section id="cases">
+    <h2 data-zh="成功案例" data-en="Case Studies">成功案例</h2>
+    <div class="grid cols-2">
+      <div class="card" data-zh="工业光电采集模块：500Hz 信号链优化" data-en="Industrial Optoelectronic Module: 500Hz Signal Chain Optimization">
+        工业光电采集模块：500Hz 信号链优化
+      </div>
+      <div class="card" data-zh="低功耗无线节点：2年续航" data-en="Low-power Wireless Node: 2-year Battery Life">
+        低功耗无线节点：2年续航
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2 data-zh="服务流程" data-en="Process">服务流程</h2>
+    <ol>
+      <li data-zh="需求沟通与评估" data-en="Requirement Analysis">需求沟通与评估</li>
+      <li data-zh="方案设计与报价" data-en="Design & Quotation">方案设计与报价</li>
+      <li data-zh="原型开发与测试" data-en="Prototype & Testing">原型开发与测试</li>
+      <li data-zh="量产导入与支持" data-en="Mass Production & Support">量产导入与支持</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2 data-zh="联系我们" data-en="Contact Us">联系我们</h2>
+    <p><strong>Email:</strong> 18256062995@163.com</p>
+    <p><strong>微信:</strong> xaihb111</p>
+    <p><strong>电话:</strong> 18511977829</p>
+  </section>
+
+  <footer>
+    © 2025 合肥科瑞思通电子科技有限公司 | Hefei Keruistone Electronics
+  </footer>
+</body>
+</html>
