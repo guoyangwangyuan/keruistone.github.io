@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>合肥科瑞思通电子科技有限公司 | Hefei Keruistone Electronics</title>
-  <meta name="description" content="合肥科瑞思通电子科技有限公司 - 十年硬件开发经验，专业电子电路开发、硬件设计、单片机开发、物联网与低功耗方案。">
+  <meta name="description" content="合肥科瑞思通电子科技有限公司 - 十年硬件开发经验，电子电路开发、硬件设计、单片机与嵌入式软件、物联网与低功耗方案、整机集成与量产导入。">
   <style>
     body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0e11;color:#e9eef5;line-height:1.6}
     header{background:#111;padding:15px 20px;position:sticky;top:0;z-index:10}
@@ -19,9 +19,13 @@
     footer{background:#111;color:#9fb0c0;text-align:center;padding:20px}
     .lang-switch{float:right}
     .btn{display:inline-block;padding:10px 16px;border-radius:6px;background:#3cc4ff;color:#04121a;font-weight:bold;text-decoration:none}
-    img{border-radius:6px;margin-top:10px}
+    img{border-radius:6px;margin-top:10px;max-width:100%;height:auto}
     .lang-zh{color:#3cc4ff;font-weight:bold}
     .lang-en{color:#70e0a6;font-weight:bold}
+    /* 联系方式区块布局 */
+    .contact-grid{display:grid;gap:20px}
+    @media(min-width:768px){.contact-grid{grid-template-columns:1.2fr 0.8fr}}
+    .contact-card{background:#12161c;padding:20px;border-radius:8px;border:1px solid #1b2330}
   </style>
   <script>
     function switchLang(lang){
@@ -44,10 +48,10 @@
       </div>
     </div>
     <nav>
-      <a href="#services" data-zh="服务" data-en="Services">服务</a>
-      <a href="#cases" data-zh="案例" data-en="Cases">案例</a>
-      <a href="#process" data-zh="流程" data-en="Process">流程</a>
-      <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
+      <a href="#services" data-zh="服务" data-en="Services" class="lang-zh">服务</a>
+      <a href="#cases" data-zh="案例" data-en="Cases" class="lang-zh">案例</a>
+      <a href="#process" data-zh="流程" data-en="Process" class="lang-zh">流程</a>
+      <a href="#contact" data-zh="联系" data-en="Contact" class="lang-zh">联系</a>
     </nav>
   </header>
 
@@ -71,8 +75,8 @@
       <div class="card" data-zh="硬件设计：原理图、PCB、EMC整改、信号完整性与电源完整性优化" data-en="Hardware Design: Schematics, PCB, EMC, SI/PI Optimization">
         硬件设计：原理图、PCB、EMC整改、信号完整性与电源完整性优化
       </div>
-      <div class="card" data-zh="单片机开发：STM32/ESP32/nRF，驱动与应用层开发，低功耗优化" data-en="MCU Development: STM32/ESP32/nRF, Drivers & Applications, Low-power Optimization">
-        单片机开发：STM32/ESP32/nRF，驱动与应用层开发，低功耗优化
+      <div class="card" data-zh="单片机开发：STM32、ESP32、nRF、Microchip PIC/AVR，驱动与应用层开发，低功耗优化" data-en="MCU Development: STM32, ESP32, nRF, Microchip PIC/AVR, Drivers & Applications, Low-power Optimization">
+        单片机开发：STM32、ESP32、nRF、Microchip PIC/AVR，驱动与应用层开发，低功耗优化
       </div>
       <div class="card" data-zh="嵌入式软件：C/C++固件开发，RTOS集成，协议栈移植" data-en="Embedded Software: C/C++ Firmware, RTOS Integration, Protocol Stacks">
         嵌入式软件：C/C++固件开发，RTOS集成，协议栈移植
@@ -109,3 +113,46 @@
   </section>
 
   <section id="process">
+    <h2 data-zh="服务流程" data-en="Process" class="lang-zh">服务流程</h2>
+    <ol>
+      <li data-zh="需求沟通与评估" data-en="Requirement Analysis" class="lang-zh">需求沟通与评估</li>
+      <li data-zh="方案设计与报价" data-en="Design & Quotation" class="lang-zh">方案设计与报价</li>
+      <li data-zh="原型开发与测试" data-en="Prototype & Testing" class="lang-zh">原型开发与测试</li>
+      <li data-zh="量产导入与支持" data-en="Mass Production & Support" class="lang-zh">量产导入与支持</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2 data-zh="联系我们" data-en="Contact us" class="lang-zh">联系我们</h2>
+    <div class="contact-grid">
+      <!-- 左侧：文本联系方式 -->
+      <div class="contact-card">
+        <p>
+          <span data-zh="邮箱：" data-en="Email: " class="lang-zh">邮箱：</span>
+          <strong>18256062995@163.com</strong>
+        </p>
+        <p>
+          <span data-zh="微信：" data-en="WeChat: " class="lang-zh">微信：</span>
+          <strong>xaihb111</strong>
+        </p>
+        <p data-zh="欢迎工程师直接对接交流需求与技术细节。" 
+           data-en="Engineer-to-engineer communication welcome for requirements and technical details."
+           class="lang-zh">
+          欢迎工程师直接对接交流需求与技术细节。
+        </p>
+        <a href="#hero" class="btn" data-zh="立即沟通" data-en="Start a conversation">立即沟通</a>
+      </div>
+      <!-- 右侧：二维码图片 -->
+      <div class="contact-card">
+        <p data-zh="扫码添加微信" data-en="Scan to add WeChat" class="lang-zh">扫码添加微信</p>
+        <!-- 请将二维码图片上传到 images/wechat.png，或修改为你的文件名 -->
+        <img src="images/wechat.png" alt="微信二维码" width="240">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 合肥科瑞思通电子科技有限公司 | Hefei Keruistone Electronics
+  </footer>
+</body>
+</html>
